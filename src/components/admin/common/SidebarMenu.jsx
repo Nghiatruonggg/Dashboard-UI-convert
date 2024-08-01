@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SidebarMenu = () => {
   return (
@@ -11,38 +12,34 @@ const SidebarMenu = () => {
         <div className="position-sticky py-4 px-3 sidebar-sticky">
           <ul className="nav flex-column h-100">
             <li className="nav-item">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href="index.html"
-              >
+              <Link className="nav-link active" to="/">
                 <i className="bi-house-fill me-2" />
                 Tổng quan
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="wallet.html">
+              <Link className="nav-link" to="/wallet">
                 <i className="bi-house-fill me-2" />
-                Ví của Tôi
-              </a>
+                Ví của tôi
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="profile.html">
+              <Link className="nav-link" to="/profile">
                 <i className="bi-house-fill me-2" />
-                Hồ sơ
-              </a>
+                Profile
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="setting.html">
+              <Link className="nav-link" to="/settings">
                 <i className="bi-house-fill me-2" />
                 Cài đặt
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="help-center.html">
+              <Link className="nav-link" to="/helpcenter">
                 <i className="bi-house-fill me-2" />
-                Trung tâm Trợ giúp
-              </a>
+                Trung tâm trợ giúp
+              </Link>
             </li>
             <li className="nav-item border-top mt-auto pt-2">
               <a className="nav-link" href="#">
