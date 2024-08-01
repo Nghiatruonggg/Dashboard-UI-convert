@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SidebarMenu = () => {
   return (
@@ -12,34 +12,34 @@ const SidebarMenu = () => {
         <div className="position-sticky py-4 px-3 sidebar-sticky">
           <ul className="nav flex-column h-100">
             <li className="nav-item">
-              <Link className="nav-link active" to="/">
+              <NavLink className="nav-link" to="/">
                 <i className="bi-house-fill me-2" />
                 Tổng quan
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/wallet">
+              <NavLink className="nav-link" to="/wallet">
                 <i className="bi-house-fill me-2" />
                 Ví của tôi
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/profile">
+              <NavLink className="nav-link" to="/profile">
                 <i className="bi-house-fill me-2" />
                 Profile
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/settings">
+              <NavLink className="nav-link" to="/settings">
                 <i className="bi-house-fill me-2" />
                 Cài đặt
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/helpcenter">
+              <NavLink className="nav-link" to="/helpcenter">
                 <i className="bi-house-fill me-2" />
                 Trung tâm trợ giúp
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item border-top mt-auto pt-2">
               <a className="nav-link" href="#">
